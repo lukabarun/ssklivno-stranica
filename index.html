@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SŠS Silvija Strahimira Kranjčevića</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f7f7f7;
+      color: #333;
+    }
+
+    header {
+      background-color: #800000; /* crvena boja */
+      color: white;
+      padding: 20px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav {
+      background-color: #b30000;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      padding: 15px 20px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      background-color: #990000;
+    }
+
+    .hero {
+      background: url('https://via.placeholder.com/1200x350') no-repeat center center/cover;
+      height: 350px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 5px #000;
+    }
+
+    .hero h1 {
+      font-size: 3em;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .main-content, .sidebar {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .main-content h2, .main-content h3 {
+      color: #800000;
+      margin-bottom: 10px;
+    }
+
+    .news-item {
+      margin-bottom: 20px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 10px;
+    }
+
+    .gallery {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+
+    .gallery img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border: 2px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .sidebar h3 {
+      color: #800000;
+      margin-bottom: 10px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    form label {
+      font-weight: bold;
+    }
+
+    form input, form textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    form button {
+      background-color: #800000;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background-color: #660000;
+    }
+
+    footer {
+      background-color: #800000;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+
+      .hero h1 {
+        font-size: 2em;
+        padding: 0 10px;
+        text-align: center;
+      }
+
+      .gallery img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Srednja strukovna škola
+        Silvija Strahimira Kranjčevića
+        Livno</h1>
+    <p>Livno</p>
+  </header>
+
+  <nav>
+    <a href="#">Početna</a>
+    <a href="#">O školi</a>
+    <a href="#">Nastava</a>
+    <a href="#">Projekti</a>
+    <a href="#">Kontakt</a>
+  </nav>
+
+  <div class="hero">
+    <h1>Dobrodošli!</h1>
+  </div>
+
+  <div class="container">
+    <div class="main-content">
+      <h2>O školi</h2>
+      <p>Srednja strukovna škola Silvija Strahimira Kranjčevića Livno pruža obrazovanje u više smjerova trogodišnjih i četverogodišnjih zanimanja.</p>
+
+      <h3>Najnovije vijesti</h3>
+
+      <div class="news-item">
+        <h4>🎓 Upisi u novu školsku godinu</h4>
+        <p>Upisi za školsku godinu 2025./2026. počinju 1. lipnja. Prijave se vrše online putem našeg sustava.</p>
+      </div>
+
+      <div class="news-item">
+        <h4>🌍 ERASMUS+ program u Sloveniji</h4>
+        <p>Naši učenici su boravili 10 dana u Sloveniji u sklopu međunarodnog projekta.</p>
+      </div>
+
+      <div class="news-item">
+        <h4>🔧 Novi kabinet za strojarstvo</h4>
+        <p>Otvoren je novi suvremeni kabinet za praktičnu nastavu učenika strojarske struke.</p>
+      </div>
+
+      <div class="news-item">
+        <h4>🏆 Sportski uspjesi</h4>
+        <p>Na školskom prvenstvu u nogometu naši učenici osvojili su prvo mjesto!</p>
+      </div>
+
+      <h3>Galerija</h3>
+      <div class="gallery">
+        <img src="ssk-livno.jpg" alt="Slika 1">
+        <img src="nekad-i-sad_ssklivno.jpg" alt="Slika 2">
+        <img src="0-02-05-05909c176db4a66596331fac13fdbb033939b283ac3765f9e58ad678683a8a54-5197e7ae18d74ab6-1638549373.jpg" alt="Slika 3">
+        <img src="Pucka-kuhinja-SSKLivno.jpg" alt="Slika 4">
+        <img src="SSK2-e1649750657580.jpg" alt="Slika 5">
+        <img src="SSK5.jpg" alt="Slika 6">
+      </div>
+    </div>
+
+    <aside class="sidebar">
+      <h3>Kontaktirajte nas</h3>
+      <form>
+        <label for="name">Ime i prezime:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email adresa:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Poruka:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Pošalji poruku</button>
+      </form>
+    </aside>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Srednja strukovna škola Silvija Strahimira Kranjčevića Livno | Sva prava pridržana.</p>
+  </footer>
+
+</body>
+</html>
